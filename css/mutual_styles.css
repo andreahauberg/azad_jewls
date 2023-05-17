@@ -15,21 +15,38 @@ img {
   object-fit: cover;
 }
 
+h1,h2 {
+  font-variant: small-caps;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
 @font-face {
   font-family: nfsfont;
   src: url(nfsfont.ttf);
 }
 
 @font-face {
-  font-family: feueon;
-  src: url(feueon.ttf);
+  font-family: MolendRegular-MVD6p;
+  src: url(MolendRegular-MVD6p.ttf);
 }
+
+@font-face {
+  font-family: AntiDesignEndeavourDemo-7BLrK;
+  src: url(AntiDesignEndeavourDemo-7BLrK.ttf);
+}
+
+@font-face {
+  font-family: StanderdfreeRegular-X3KK2;
+  src: url(StanderdfreeRegular-X3KK2.ttf);
+}
+
 
 /* HEADER */
 header {
-  /* background-image: url(../img/COLOURBOX2749136.jpg); */
+  background-image: url(../img/);
   background-size: cover;
-  font-family: nfsfont;
+  font-family: MolendRegular-MVD6p;
   font-size: 2cqw;
 }
 
@@ -72,10 +89,18 @@ a {
   gap: 60px;
 }
 
-.head_link {
+.head_link{
   color: #990000;
+}
+
+.head_link:hover,
+.foot_link:hover,
+.under_li_nav:hover,
+.under_li:hover{
+  color:darkblue;
   transition: 0.7s ease;
 }
+
 
 .head_link:hover,
 .foot_link:hover {
@@ -168,8 +193,7 @@ footer {
   padding: 20px 0;
   margin-bottom: 0;
   font-variant: small-caps;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .foot_link {
@@ -201,14 +225,14 @@ li {
 
 .col-lg-4,
 .col-md-4 {
+  margin-top: 2em;
   flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 20px;
 }
 
 .copy {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 20px;
 }
 
