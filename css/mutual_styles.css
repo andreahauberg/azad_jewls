@@ -48,7 +48,8 @@ header {
   background-size: cover;
   font-family: MolendRegular-MVD6p;
   font-size: 2cqw;
-  padding-bottom: 30px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* HEADER LOGO */

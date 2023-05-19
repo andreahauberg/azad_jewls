@@ -10,10 +10,10 @@
   
   #left-column {
     margin-top: 10em;
+    margin-left: 10em;
     margin-bottom: 10em;
     width: 30%;
     position: sticky;
-    top: 20px;
     display: flex;
     flex-direction: column;
     background-image: url(../img/silk_liquid.png);
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   
     
   }
   
@@ -105,6 +106,7 @@ input[type="submit"] {
       position: static;
       margin-top: 5em;
       margin-bottom: 5em;
+      margin-left: 0em;
     }
   
     #right-column {
