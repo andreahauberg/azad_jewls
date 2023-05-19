@@ -54,7 +54,7 @@ header {
 /* HEADER LOGO */
 
 #head_logo {
-  width: 15%;
+  width: 10%;
   background-image: url(../img/azad.png);
 }
 
@@ -164,6 +164,7 @@ a {
     background-image:url(../img/silk_liquid.png);
     border-radius: 50%;
   }
+
 
   .hamburger {
     display: block;
