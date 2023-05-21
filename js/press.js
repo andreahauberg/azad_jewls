@@ -30,7 +30,7 @@ const images = [
   
   window.addEventListener("resize", reloadPage);
   
-  document.addEventListener("click", function (event) {
+  document.addEventListener("mousedown", function (event) {
     const mainElement = document.querySelector("main");
     if (event.target === mainElement) {
       event.preventDefault();

@@ -65,7 +65,7 @@ li {
 }
 
 a {
-  color: #01017e;
+  color: #990000;
   text-decoration: none;
 }
 
@@ -98,16 +98,13 @@ a {
 .head_link:hover,
 .foot_link:hover,
 .under_li_nav:hover,
-.under_li:hover{
+.under_li:hover,
+.content_link:hover{
   color:darkblue;
   transition: 0.7s ease;
 }
 
 
-.head_link:hover,
-.foot_link:hover {
-  color: darkblue;
-}
 
 .hamburger {
   display: none;

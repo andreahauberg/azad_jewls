@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="img/azad.png" />
     <link rel="stylesheet" href="css/mutual_styles.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
+    <header id="home_head">
       <nav class="navbar">
         <div id="head_logo">
         <a href="index.html" class="nav-logo">
@@ -29,7 +29,7 @@
             <a href="about.html" class="head_link">About</a>
           </li>
           <li class="nav_item">
-            <a href="contact.html" class="head_link">Contact</a>
+            <a href="contact.php" class="head_link">Contact</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -38,10 +38,19 @@
           <span class="bar"></span>
         </div>
       </nav>
+      
     </header>
 
     <main>
+      <div class="video-container">
+        <video src="img/azad_jewls.mp4" autoplay loop playsinline type="video/mp4" class="bg_video"></video>
+        <div class="content">
+          <a href="products.html" class="content_link">products</a>
+        </div>
+      </div>
     </main>
+   
+  
     <footer>
       <div class="container">
         <div class="row">
@@ -53,12 +62,8 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <ul>
-              <li>
-                <a href="https://www.instagram.com/azadjewels/?hl=da" target="_blank" class="foot_link">instagram</a>
-              </li>
-              <li>
-                <a href="mailto:info@aazaddemir.com?subject=CUSTOMER%20SERVICE" class="foot_link">contact us</a>
-              </li>
+              <li><a href="https://www.instagram.com/azadjewels/?hl=da" target="_blank" class="foot_link">instagram</a></li>
+              <li><a href="mailto:info@aazaddemir.com?subject=CUSTOMER%20SERVICE" class="foot_link">contact us</a></li>
             </ul>
           </div>
         </div>
@@ -67,11 +72,11 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="logo">
-                <div id="foot_logo">
-                  <a href="#" class="nav-logo">
+              <div id="foot_logo">
+                <a href="#" class="nav-logo">
                   <img src="img/azad.png" alt="" />
                 </a>
-                </div>
+              </div>
             </div>
             <div class="copy">
               <p>&copy; 2023 azad demir. all rights reserved.</p>
@@ -80,6 +85,7 @@
         </div>
       </div>
     </footer>
+  
     
 
     <script src="js/script.js"></script>

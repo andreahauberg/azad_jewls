@@ -1,3 +1,30 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"])) {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+  $to = "andrea_hauberg@hotmail.com";
+  $subject = 'New message from the contact form';
+
+  $headers = "From: $name <$email>" . "\r\n";
+  $headers .= "Reply-To: $email" . "\r\n";
+
+  $mailContent = "Name: $name\n";
+  $mailContent .= "Email: $email\n";
+  $mailContent .= "Message: $message\n";
+
+  if (mail($to, $subject, $mailContent, $headers)) {
+    $message = "The email has been sent.";
+  } else {
+    $message = "An error occurred while sending the email.";
+  }
+} else {
+  $message = "Please fill in all the required fields.";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -71,20 +98,23 @@
         <h1 class="contact_h1">contact us</h1>
 
         <div id="contact_form">
-          <form action="/send-email" method="POST">
-            <label for="name">name</label>
-            <input type="text" id="name" name="name" required /><br /><br />
+      <form action="" method="POST">
+        <?php if (!empty($message)) : ?>
+          <p><?php echo $message; ?></p>
+        <?php endif; ?>
 
-            <label for="email">e-mail</label>
-            <input type="email" id="email" name="email" required /><br /><br />
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" required /><br /><br />
 
-            <label for="message">message</label><br />
-            <textarea id="message" name="message" rows="5" required></textarea
-            ><br /><br />
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email" required /><br /><br />
 
-            <input type="submit" value="send" />
-          </form>
-        </div>
+        <label for="message">message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <input type="submit" name="SEND" value="send" />
+      </form>
+    </div>
       </div>
     </main>
     <footer>
