@@ -1,29 +1,29 @@
-<!-- <?php
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
-// if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"])) {
-//   $name = $_POST["name"];
-//   $email = $_POST["email"];
-//   $message = $_POST["message"];
-//   $to = "andrea_hauberg@hotmail.com";
-//   $subject = 'New message from the contact form';
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"])) {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+  $to = "jean@andreahauberg.dk";
+  $subject = 'New message from the contact form';
 
-//   $headers = "From: $name <$email>" . "\r\n";
-//   $headers .= "Reply-To: $email" . "\r\n";
+  $headers = "From: $name <$email>" . "\r\n";
+  $headers .= "Reply-To: $email" . "\r\n";
 
-//   $mailContent = "Name: $name\n";
-//   $mailContent .= "Email: $email\n";
-//   $mailContent .= "Message: $message\n";
+  $mailContent = "Name: $name\n";
+  $mailContent .= "Email: $email\n";
+  $mailContent .= "Message: $message\n";
 
-//   if (mail($to, $subject, $mailContent, $headers)) {
-//     $message = "The email has been sent.";
-//   } else {
-//     $message = "An error occurred while sending the email.";
-//   }
-// } else {
-//   $message = "Please fill in all the required fields.";
-// }
-?> -->
+  if (mail($to, $subject, $mailContent, $headers)) {
+    $message = "The email has been sent.";
+  } else {
+    $message = "An error occurred while sending the email.";
+  }
+} else {
+  $message = "Please fill in all the required fields.";
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -99,9 +99,9 @@
 
         <div id="contact_form">
       <form action="" method="POST">
-        <!-- <?php if (!empty($message)) : ?>
+        <?php if (!empty($message)) : ?>
           <p><?php echo $message; ?></p>
-        <?php endif; ?> -->
+        <?php endif; ?>
 
         <label for="name">name</label>
         <input type="text" id="name" name="name" required /><br /><br />
