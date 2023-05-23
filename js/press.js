@@ -1,6 +1,6 @@
 const images = [
-    "img/press1.jpg", "img/press2.jpg", "img/press3.jpg", "img/press4.jpg",
-    "img/press5.jpg", "img/press6.jpg", "img/press7.jpg", "img/press8.jpg"
+    "img/press1.png", "img/press2.png", "img/press3.png", "img/press4.png",
+    "img/press5.png", "img/press6.png", "img/press7.png", "img/press8.png"
   ];
   
   let i = 0;
