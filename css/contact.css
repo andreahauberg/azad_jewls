@@ -49,6 +49,7 @@ textarea {
   color: #a62f2f9a;
   margin-bottom: 10px;
   border-radius: 5px;
+  font-family: MolendRegular-MVD6p;
 }
 
 input[type="submit"] {
@@ -131,3 +132,17 @@ input[type="submit"] {
   .contact_h2 {
     font-size: 2em;
   }
+
+
+  .success-message {
+    color: rgb(20, 48, 20);
+    font-family: StanderdfreeRegular-X3KK2;
+    padding-bottom: 2em;
+  }
+
+  .error-message {
+    color: #990000;
+    font-family: StanderdfreeRegular-X3KK2;
+    padding-bottom: 2em;
+  }
+

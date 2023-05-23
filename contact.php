@@ -20,9 +20,13 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
   } else {
     $message = "An error occurred while sending the email.";
   }
-} else {
-  $message = "Please fill in all the required fields.";
-}
+} 
+$messageClass = "";
+if ($message == "The email has been sent.") {
+  $messageClass = "success-message";
+} elseif ($message == "An error occurred while sending the email.") {
+  $messageClass = "error-message";
+} 
 ?>
 
 <!DOCTYPE html>
@@ -98,11 +102,12 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
         <h1 class="contact_h1">contact us</h1>
 
         <div id="contact_form">
-      <form action="" method="POST">
         <?php if (!empty($message)) : ?>
-          <p><?php echo $message; ?></p>
+      <div class="<?php echo $messageClass; ?>">
+      <?php echo $message; ?>
+    </div>
         <?php endif; ?>
-
+        <form action="" method="POST">
         <label for="name">name</label>
         <input type="text" id="name" name="name" required /><br /><br />
 
