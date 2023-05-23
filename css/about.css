@@ -15,7 +15,7 @@ h2 {
     margin-top: 70%;
     text-align: right;
     z-index: 1;
-    color: darkblue;
+    color: #00008b;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: white;
     font-size: 6cqw;
@@ -41,14 +41,13 @@ h3 {
     z-index: -1;
   }
 
-  .video-container {
+.video-container {
     position: relative;
     overflow: hidden;
     height: auto;
-    z-index: -1;
-    height: auto;
     padding: 10%;
     background-color: black;
+
   }
 
 .footer-container {
@@ -69,7 +68,7 @@ h3 {
 
   .grid-container2 {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     align-items: flex-end;
     margin-left: 10%;
