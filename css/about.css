@@ -29,6 +29,15 @@ h2 {
     z-index: -1;
   }
 
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    z-index: -1;
+    height: 100vh;
+    
+  }
+
 .content {
     font-family: MolendRegular-MVD6p;
     position: absolute;
