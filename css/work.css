@@ -26,10 +26,6 @@ main {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Add the "visible" class to the intro section */
-.visible {
-  display: block;
-}
 
 .section {
   display: none;
