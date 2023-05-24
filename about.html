@@ -44,11 +44,17 @@
 
         <!-- VIDEO -->
        <div class="video-container">
-       <h3>PORTRAIT</h3>
-          <video src="img/video/video_test.mp4" autoplay playsinline type muted="video/mp4" class="bg_video" controls>
-          </video>
-          </div> 
+          <h3>PORTRAIT</h3>
+            <div id="play-button" class="overlay-button">play</div>
+            <div id="pause-button" class="overlay-button">pause</div>
+          
+          <video id="my-video" width="640" height="360">
+          <source src="img/video/video_test.mp4" type="video/mp4"></video>
+      
+          </div>
 
+    </div>
+          
     <main>
         
         <!-- ABOUT SEKTION -->
@@ -151,8 +157,8 @@
       </footer>
     
   
-      <script src="js/script.js"></script>
       <script src="js/about.js"></script>
+      <script src="js/script.js"></script>
     </body>
   </html>
   
