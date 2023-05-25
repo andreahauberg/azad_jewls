@@ -22,7 +22,7 @@
 /* General styles */
 body,
 main {
-  background-color: antiquewhite;
+  background-color:gray;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -67,6 +67,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+p {
+  padding:10px;
+  margin:10px;
+  justify-content: center;
+
 }
 
 .img {
@@ -179,9 +185,6 @@ main {
   transition: filter 0.5s;
 }
 
-
-
-
 .slide:first-child p {
   position: absolute;
   top: 50%;
@@ -225,7 +228,6 @@ main {
   border-color: transparent;
   font-size: 40px;
   cursor: pointer;
-  color: red;
   transition: var(--transition);
 }
 
@@ -260,7 +262,6 @@ main {
 
 #local-menu {
   background-color: transparent;
-  padding: 10px;
 }
 
 .local_menu {
@@ -277,12 +278,12 @@ main {
 
 .local_link {
   text-decoration: none;
-  color: red;
+  color: black;
   padding: 5px;
 }
 
 .local_link:hover {
-  color: blue;
+  color: rgb(125, 8, 8);
 }
 @media screen and (max-width: 576px) {
   
