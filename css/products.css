@@ -48,7 +48,7 @@ h1 {
   }
   
   .text {
-    color: #fff;
+    color: var(--custom-color);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
