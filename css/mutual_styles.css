@@ -1,3 +1,9 @@
+/* costume css property */
+:root {
+  --custom-color: #990000;
+}
+
+
 /* DEFAULT STYLE */
 * {
   padding: 0;
@@ -65,7 +71,7 @@ li {
 }
 
 a {
-  color: #990000;
+  color: var(--custom-color);
   text-decoration: none;
 }
 
@@ -92,7 +98,7 @@ a {
 }
 
 .head_link{
-  color: #990000;
+  color: var(--custom-color);
 }
 
 .head_link:hover,
@@ -110,14 +116,13 @@ a {
   display: none;
   cursor: pointer;
 }
-
 .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #990000;
+  background-color: var(--custom-color);
 }
 
 /* Responsive styles */
