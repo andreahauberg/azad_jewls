@@ -1,25 +1,27 @@
-h1 {
+h1{
     font-family: MolendRegular-MVD6p;;
     color: #990009;
     position: absolute;
+    text-align: right;
     font-size: 9cqw;
-    margin-top: 10%;
-    margin-left: 36%;
+    margin-left: 11.2%;
+    margin-bottom: 5%;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: white;
 }
 
+
 h2 {
-    font-family: MolendRegular-MVD6p;;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     position: static;
-    margin-top: 70%;
-    text-align: right;
+    text-align: left;
     z-index: 1;
     color: #00008b;
-    -webkit-text-stroke-width: 0.1px;
+    font-size: 3cqw;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    -webkit-text-stroke-width: 0.15px;
     -webkit-text-stroke-color: white;
-    font-size: 6cqw;
-    font-style: italic;
 }
 
 h3 {
@@ -32,6 +34,27 @@ h3 {
     opacity: 10%;
     font-style: italic;
     pointer-events: none;
+}
+
+h4{
+    font-family: MolendRegular-MVD6p;;
+    color: #990009;
+    position: absolute;
+    text-align: center;
+    font-size: 4cqw;
+    margin-bottom: 5%;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.intro-container {
+    position: relative;
+    height: auto;
+    padding: 10%;
 }
 
 .about-container {
@@ -47,87 +70,66 @@ h3 {
     height: auto;
     padding: 10%;
     background-color: black;
-  }
-
-  #video-player {
-    position: sticky;
-    width: 640px;
-  }
-
-  #play-button {
-    position: absolute;
-    cursor: pointer;
-    font-family: nfsfont;
-    color: white;
-    font-size: 4cqw;
-  }
-
-  #pause-button {
-    position: absolute;
-    cursor: pointer;
-    font-family: nfsfont;
-    color: white;
-    font-size: 4cqw;
-  }
-
+}
 
 .footer-container {
-    background-color: black;
+    position: relative;
+    overflow: hidden;
+    height: auto;
     padding: 10%;
-
+    background-color: black;
 }
 
 .grid-container1 {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    grid-gap: 1em;
-    margin: 40px;
+    grid-template-columns: 1fr 1fr;
     align-items: flex-end;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-bottom: 7%;
 }
 
-  .grid-container2 {
+.grid-container2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
+    grid-template-columns: 4fr 1fr;
     align-items: flex-end;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+}
 
-  .grid-container3 {
+.grid-container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-end;
-    grid-gap: 10em;
+    margin-bottom: 7%;
+    grid-gap: 5%;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: flex-end;
+    background-color: #D2D2D2;
+}
+
+.grid_item2 {
+    margin-bottom: 10%;
+}
+
+p {
     margin-left: 10%;
     margin-right: 10%;
-    padding: 8%;
-  }
-
-  blockquote {
-    margin-top: 10%;
     font-family: StanderdfreeRegular-X3KK2;
-    font-style: italic;
-    padding: 5%;
-    font-size: 2cqw;
-    text-align: right;
-    line-height: 50px;
-    color: rgb(196, 194, 194);
-  }
+    line-height: 34px; 
+    font-size: 20px;
+    color: #CAC9C9;
+    text-align: justify;
+}
 
   video {
     width: 100%;
     height: 80vh;
   }
 
-
-
-
 /* MEDIA */
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {    
 
   .video-container {
     position: relative;
@@ -137,8 +139,7 @@ h3 {
 }
 .about-container {
     position: relative;
-    padding: aut
-
+    padding: auto;
 }
 
 video {
@@ -146,41 +147,20 @@ video {
     height: auto;
 }
 
-img {
-    padding: 5%;
-}
-}
-
 @media (max-width: 1000px) {
 
 /* GRID 1 */
-.grid-container1 {
+.grid-container1, .grid-container2, .grid-container3{
     width: 100%;
     max-width: 540px;
-    margin: 0 auto;
     display:contents;
-  }
-
-/* GRID 2 */
-.grid-container2 {
-  width: 100%;
-  max-width: auto;
-  margin: 0 auto;
-  display: contents;
 }
 
-.grid-container3 {
-    width: auto;
-    margin: 0 auto;
-}
-
-img {
-    padding: 5%;
-}
-
-blockquote {
-    margin-top: 0%;
-    font-size: 3cqw;
+.grid-container4 img {
+    width: 100%;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    border-radius: 50%;
+    background-color: #D2D2D2;
 }
 
 h1 {
@@ -192,9 +172,6 @@ h1 {
 
 h2 {
     font-size: 8cqw;
-    margin-top: 0%;
-    text-align: right;
-    padding: 5%;
-
+}
 }
 }
