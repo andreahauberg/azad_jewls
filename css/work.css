@@ -40,13 +40,12 @@ h1, h2, h3, h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
+h1 {
+  margin-top:20px;
+}
 
 ul, li {
   font-size: 30px;
-}
-
-h1 {
-  margin: 50px;
 }
 
 *,
@@ -275,4 +274,33 @@ main {
 
 .local_link:hover {
   color: blue;
+}
+@media screen and (max-width: 576px) {
+  
+  .local_menu {
+    display: block;
+    line-height:normal;
+  }
+  
+  .local_item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p {
+    margin:10px;
+    padding: 10px;
+    text-align:justify;
+  position:relative;
+  }
+  
+  .local_link {
+    display:block;
+    font-size: 15px;
+  }
+
+  .slider-container {
+    height: 45vh;
+  }
+
 }
