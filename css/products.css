@@ -1,0 +1,90 @@
+h1 {
+    font-family: MolendRegular-MVD6p;;
+    color: #990009;
+    position:sticky;
+    font-size: 6cqw;
+    text-align: center;
+    margin-top: 5%;
+   
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 40px;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .grid-item .new-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+    filter: blur(2px) brightness(0.6);
+    
+  }
+  
+  .grid-item:hover img {
+    opacity: 0.3;
+  }
+  
+  .grid-item:hover .new-image {
+    opacity: 1;
+  }
+
+  
+  
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+}
