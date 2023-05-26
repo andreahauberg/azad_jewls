@@ -99,7 +99,11 @@ p {
   margin: 10px;
   justify-content: center;
 }
-
+p {
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
 .img {
   width: 100%;
   display: block;
