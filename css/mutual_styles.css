@@ -75,10 +75,6 @@ a {
   text-decoration: none;
 }
 
-/* .nav_item {
-    background-image: url(../img/COLOURBOX2749136.jpg);
-    border-radius: 30%;
-  } */
 
 .navbar {
   min-height: 70px;
@@ -150,7 +146,9 @@ a {
   /*navbar styles */
   .nav_menu {
     /* flex-direction: column; */
-    position: fixed;
+    background-image:url(../img/azadhead.png);
+    background-size: cover;
+    position: absolute;
     overflow: hidden;
     left: -100%;
     top: 70px;
@@ -163,7 +161,6 @@ a {
 
   .nav_item {
     margin: 16px 0;
-    background-image:url(../img/silk_liquid.png);
     border-radius: 50%;
   }
 
