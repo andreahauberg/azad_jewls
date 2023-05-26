@@ -1,34 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"])) {
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
-  $to = "jean@andreahauberg.dk";
-  $subject = 'New message from the contact form';
-
-  $headers = "From: $name <$email>" . "\r\n";
-  $headers .= "Reply-To: $email" . "\r\n";
-
-  $mailContent = "Name: $name\n";
-  $mailContent .= "Email: $email\n";
-  $mailContent .= "Message: $message\n";
-
-  if (mail($to, $subject, $mailContent, $headers)) {
-    $message = "The email has been sent.";
-  } else {
-    $message = "An error occurred while sending the email.";
-  }
-} 
-$messageClass = "";
-if ($message == "The email has been sent.") {
-  $messageClass = "success-message";
-} elseif ($message == "An error occurred while sending the email.") {
-  $messageClass = "error-message";
-} 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -103,12 +72,7 @@ if ($message == "The email has been sent.") {
         <h1 class="contact_h1">contact us</h1>
 
         <div id="contact_form">
-        <?php if (!empty($message)) : ?>
-      <div class="<?php echo $messageClass; ?>">
-      <?php echo $message; ?>
-    </div>
-        <?php endif; ?>
-        <form action="" method="POST">
+        <form action="" name="kontakt" netlify onsubmit="showSuccessMessage(event)">
         <label for="name">name</label>
         <input type="text" id="name" name="name" required /><br /><br />
 
@@ -121,6 +85,7 @@ if ($message == "The email has been sent.") {
         <input type="submit" name="SEND" value="send" />
       </form>
     </div>
+    <div id="success_message"></div>
       </div>
     </main>
     <footer>
@@ -172,5 +137,6 @@ if ($message == "The email has been sent.") {
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
