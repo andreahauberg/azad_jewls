@@ -1,24 +1,8 @@
 /* Fonts */
 @font-face {
-  font-family: nfsfont;
-  src: url(nfsfont.ttf);
+  font-family: nfsfont, MolendRegular-MVD6p, AntiDesignEndeavourDemo-7BLrK, StanderdfreeRegular-X3KK2;
+  src: url(nfsfont.ttf), url(MolendRegular-MVD6p.ttf), url(AntiDesignEndeavourDemo-7BLrK.ttf), url(StanderdfreeRegular-X3KK2.ttf);
 }
-
-@font-face {
-  font-family: MolendRegular-MVD6p;
-  src: url(MolendRegular-MVD6p.ttf);
-}
-
-@font-face {
-  font-family: AntiDesignEndeavourDemo-7BLrK;
-  src: url(AntiDesignEndeavourDemo-7BLrK.ttf);
-}
-
-@font-face {
-  font-family: StanderdfreeRegular-X3KK2;
-  src: url(StanderdfreeRegular-X3KK2.ttf);
-}
-
 /* General styles */
 body,
 main {
