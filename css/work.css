@@ -55,6 +55,11 @@ main {
   padding: 5rem 0;
 }
 
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
 h1,
 h2,
 p,
@@ -130,7 +135,7 @@ p {
 }
 
 .slide-img:hover {
-  filter: blur(5px);
+  filter: blur(10px);
 }
 
 /* Media Queries */
@@ -209,7 +214,11 @@ main {
   position: relative;
   overflow: hidden;
   margin-top: 4rem;
-}
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+  }
+
 
 .slide {
   position: absolute;
@@ -333,6 +342,7 @@ main {
     margin-right: 0;
     margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   p {
@@ -350,9 +360,30 @@ main {
   .slider-container {
     height: 45vh;
   }
-}
-@media screen and (max-width: 576px) {
-  .projekt {
-    margin-top: 20%; /* Adjust the margin-top value as desired */
-  }
-}
+    .projekt {
+      margin-top: 20vh;
+      position: relative;
+    }
+  
+    .copy,
+    .introp {
+      margin-top: 2rem;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      padding: 5px;
+      margin: 5px;
+    }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .slider-container {
+        height: 75vh;
+      }
+    }
