@@ -1,31 +1,14 @@
-/* Fonts */
-@font-face {
-  font-family: nfsfont;
-  src: url(nfsfont.ttf);
-}
 
-@font-face {
-  font-family: MolendRegular-MVD6p;
-  src: url(MolendRegular-MVD6p.ttf);
-}
-
-@font-face {
-  font-family: AntiDesignEndeavourDemo-7BLrK;
-  src: url(AntiDesignEndeavourDemo-7BLrK.ttf);
-}
-
-@font-face {
-  font-family: StanderdfreeRegular-X3KK2;
-  src: url(StanderdfreeRegular-X3KK2.ttf);
-}
 
 /* General styles */
 body,
 main {
   background-color: gray;
-  font-family: molendRegular-MVD6p;
+  font-family: MolendRegular-MVD6p;
 }
-.copy, .projekt {
+
+.copy,
+.projekt {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,19 +20,16 @@ main {
   max-width: 75ch;
 }
 
-  .projekt {
-    margin-top: 30%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; /* Adjust the gap value as desired */
-  }
+.projekt {
+  margin-top: 30%;
+  gap: 1rem;
+}
 
 .introp {
   max-width: 75ch;
   margin-top: 1rem;
 }
+
 .section {
   display: none;
   padding: 5rem 0;
@@ -62,8 +42,8 @@ p,
 .prevBtn,
 ul,
 li {
-font-weight: bolder;
-font-family: molendRegular-MVD6p;
+  font-weight: bolder;
+  font-family: MolendRegular-MVD6p;
 }
 
 h1,
@@ -350,9 +330,21 @@ main {
   .slider-container {
     height: 45vh;
   }
+
 }
 @media screen and (max-width: 576px) {
   .projekt {
     margin-top: 20%; /* Adjust the margin-top value as desired */
+
+
+ 
+    margin-top: 20vh;
+    position: relative;
+  }
+
+  .copy,
+  .introp {
+    margin-top: 2rem;
+
   }
 }
