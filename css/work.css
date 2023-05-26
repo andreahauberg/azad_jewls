@@ -90,8 +90,9 @@ p {
 }
 
 .slide-img{
-max-width: 1000px;
-  object-fit: cover;
+max-width: 800px;
+max-height: 1500px;
+  object-fit:contain;
   transition: filter 4s ease-in-out;
   opacity: 1;
 }
@@ -187,7 +188,6 @@ main {
 
 .slide-img {
   max-height: auto;
-  object-fit: cover;
   transition: filter 0.5s;
 }
 
