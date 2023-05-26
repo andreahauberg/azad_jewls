@@ -9,7 +9,7 @@ function setupCarousel(sectionId) {
     // Add event listener for hover
     slide.addEventListener("mouseenter", function () {
       slide.querySelector(".slide-text").style.opacity = 1;
-      slide.querySelector(".slide-img").style.filter = "blur(5px)";
+      slide.querySelector(".slide-img").style.filter = "blur(10px)";
     });
 
     slide.addEventListener("mouseleave", function () {
