@@ -1,8 +1,24 @@
 /* Fonts */
 @font-face {
-  font-family: nfsfont, MolendRegular-MVD6p, AntiDesignEndeavourDemo-7BLrK, StanderdfreeRegular-X3KK2;
-  src: url(nfsfont.ttf), url(MolendRegular-MVD6p.ttf), url(AntiDesignEndeavourDemo-7BLrK.ttf), url(StanderdfreeRegular-X3KK2.ttf);
+  font-family: nfsfont;
+  src: url(nfsfont.ttf);
 }
+
+@font-face {
+  font-family: MolendRegular-MVD6p;
+  src: url(MolendRegular-MVD6p.ttf);
+}
+
+@font-face {
+  font-family: AntiDesignEndeavourDemo-7BLrK;
+  src: url(AntiDesignEndeavourDemo-7BLrK.ttf);
+}
+
+@font-face {
+  font-family: StanderdfreeRegular-X3KK2;
+  src: url(StanderdfreeRegular-X3KK2.ttf);
+}
+
 /* General styles */
 body,
 main {
@@ -38,11 +54,6 @@ main {
   display: none;
   padding: 5rem 0;
 }
-
-p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
 
 h1,
 h2,
@@ -119,7 +130,7 @@ p {
 }
 
 .slide-img:hover {
-  filter: blur(10px);
+  filter: blur(5px);
 }
 
 /* Media Queries */
@@ -198,11 +209,7 @@ main {
   position: relative;
   overflow: hidden;
   margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-  }
-
+}
 
 .slide {
   position: absolute;
@@ -326,7 +333,6 @@ main {
     margin-right: 0;
     margin-bottom: 10px;
     text-align: center;
-    margin-bottom: 15px;
   }
 
   p {
@@ -344,30 +350,9 @@ main {
   .slider-container {
     height: 45vh;
   }
-    .projekt {
-      margin-top: 20vh;
-      position: relative;
-    }
-  
-    .copy,
-    .introp {
-      margin-top: 2rem;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    
-    h2 {
-      font-size: 25px;
-    }
-    p {
-      padding: 5px;
-      margin: 5px;
-    }
-    }
-
-    @media screen and (min-width: 1200px) {
-      .slider-container {
-        height: 75vh;
-      }
-    }
+}
+@media screen and (max-width: 576px) {
+  .projekt {
+    margin-top: 20%; /* Adjust the margin-top value as desired */
+  }
+}
