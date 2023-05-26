@@ -73,6 +73,10 @@ h1 {
     opacity: 1;
   }
 
+  .hide_aao {
+    display: none;
+  }
+
   
   
 
@@ -80,11 +84,20 @@ h1 {
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
+  .hide {
+    display: none;
+  }
+  .hide_aao {
+    display:contents;
+  }
+ 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .grid-container {
     grid-template-columns: 1fr;
     gap:10px;
   }
+
+
 }
