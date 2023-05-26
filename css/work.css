@@ -287,7 +287,7 @@ main {
 }
 
 section {
-  padding-top: 1rem; /* Adjust this value as needed */
+  padding-top: 1rem;
 }
 
 .local_menu1{
@@ -348,7 +348,6 @@ section {
   }
 }
 
-/* Additional CSS to make p and h1 in local section centered */
 .local_section {
   display: flex;
   flex-direction: column;
