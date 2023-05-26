@@ -10,7 +10,7 @@
   
   #left-column {
     margin-top: 10em;
-    margin-left: 10em;
+    margin-left: 5em;
     margin-bottom: 10em;
     width: 30%;
     position: sticky;
@@ -53,7 +53,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #990000;
+    background-color: var(--custom-color);
     color: #bcbcbc;
     padding: 10px 20px;
     border: none;
@@ -85,7 +85,7 @@ input[type="submit"] {
   }
   
   .under_li_nav {
-    color:#990000;
+    color: var(--custom-color);
     font-weight: bolder;
     font-size: xx-large;
   }
@@ -116,23 +116,17 @@ input[type="submit"] {
     }
   }
   
-  
-  
-  
-
-  .contact_h2,
-  .contact_h1 {
+h1,h2{
     color: #bcbcbc;
   }
 
-  .contact_h1 {
+  h1 {
     font-size: 3em;
   }
 
-  .contact_h2 {
+  h2 {
     font-size: 2em;
   }
-
 
  .success-message {
         background-color: #7bd46d;

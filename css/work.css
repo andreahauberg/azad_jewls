@@ -195,7 +195,7 @@ main {
 
 .slide-img {
   max-width: 800px;
-  max-height: 800;
+  max-height: 800px;
   object-fit: cover;
   transition: filter 0.5s;
 }
