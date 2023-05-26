@@ -1,3 +1,4 @@
+/* Fonts */
 
 
 /* General styles */
@@ -331,13 +332,7 @@ main {
     height: 45vh;
   }
 
-}
-@media screen and (max-width: 576px) {
   .projekt {
-    margin-top: 20%; /* Adjust the margin-top value as desired */
-
-
- 
     margin-top: 20vh;
     position: relative;
   }
@@ -345,6 +340,5 @@ main {
   .copy,
   .introp {
     margin-top: 2rem;
-
   }
 }
