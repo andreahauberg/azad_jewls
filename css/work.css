@@ -1,17 +1,19 @@
-
 @namespace url("http://www.w3.org/1999/xhtml");
 
 h1 {
-  position:sticky;
+  position: sticky;
   text-align: center;
 }
-.copy, p  {
+
+.copy,
+p {
   text-align: center !important;
 }
+
 main {
 
-line-height: 34px;
-color: var(--custom-color)
+  line-height: 34px;
+  color: var(--custom-color)
 }
 
 .local_menu {
