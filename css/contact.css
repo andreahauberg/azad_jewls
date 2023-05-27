@@ -115,16 +115,14 @@ input[type="submit"] {
       margin-bottom: 5em;
     }
   }
-  
-h1,h2{
-    color: #bcbcbc;
-  }
 
   h1 {
+    color: var(--custom-color);
     font-size: 3em;
   }
 
   h2 {
+    color: #bcbcbc;
     font-size: 2em;
   }
 
