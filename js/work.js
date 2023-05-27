@@ -6,15 +6,18 @@ function setupCarousel(sectionId) {
   slides.forEach(function (slide, index) {
     slide.style.left = `${index * 100}%`;
 
+    const slideImg = slide.querySelector(".slide-img");
+    const slideText = slide.querySelector(".text");
+
     // Add event listener for hover
-    slide.addEventListener("mouseenter", function () {
-      slide.querySelector(".text").style.opacity = 1;
-      slide.querySelector(".slide-img").style.filter = "blur(10px)";
+    slideImg.addEventListener("mouseenter", function () {
+      slideText.style.opacity = 1;
+      slideImg.style.filter = "blur(10px)";
     });
 
-    slide.addEventListener("mouseleave", function () {
-      slide.querySelector(".text").style.opacity = 0;
-      slide.querySelector(".slide-img").style.filter = "blur(0)";
+    slideImg.addEventListener("mouseleave", function () {
+      slideText.style.opacity = 0;
+      slideImg.style.filter = "blur(0)";
     });
   });
 
@@ -70,4 +73,3 @@ setupCarousel("sec4");
 
 // Apply carousel to section with ID "sec5"
 setupCarousel("sec5");
-
