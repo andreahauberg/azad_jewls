@@ -12,18 +12,19 @@ h1 {
 #intro {background-color: black;
 }
 #sec1 {
-  background-color: black;
+background-color: black;
 }
-#sec3:not(.slide){
-  background-image: url(../img/azad.png);
-  opacity: 40%;
-  background-repeat: round;
+#sec3{
+  background-image: url(../img/work/SVG/SVG/test.png);
+  background-position: center;
 }
 
 main {
   line-height: 34px;
-  color: var(--custom-color)
+  color: var(--custom-color);
+  background-color: black;
 }
+
 
 .local_menu {
   position:sticky;
