@@ -9,16 +9,6 @@ h1 {
   padding-bottom: 4rem;
 }
 
-#intro {background-color: black;
-}
-#sec1 {
-background-color: black;
-}
-#sec3{
-  background-image: url(../img/work/SVG/SVG/test.png);
-  background-position: center;
-}
-
 main {
   line-height: 34px;
   color: var(--custom-color);
@@ -40,7 +30,7 @@ main {
   /* udseende på sticky menu */
   background-color: black;
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 99;
 }
 
 .local_link {
@@ -67,6 +57,9 @@ main {
   text-align: center !important;
   margin: 0 auto;
   max-width: 75ch;
+}
+.copy p {
+  font-size: 15px !important;
 }
 
 .introp {
@@ -143,7 +136,7 @@ main {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   main {
     max-width: 960px;
   }
@@ -156,12 +149,14 @@ main {
   padding: 0.2rem;
   line-height: 0.8rem;
   z-index: 0;
+  margin-top: 20px;
 }
+
 .copy {
   padding: 1rem;
 }
   .local_link {
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
@@ -173,6 +168,7 @@ main {
 @media screen and (max-width: 1000px) {
   main {
     max-width: 1000px;
+  
   }
 
   p .text {
