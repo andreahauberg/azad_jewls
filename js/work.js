@@ -3,6 +3,7 @@ function setupCarousel(sectionId) {
   const nextBtn = document.querySelector(`#${sectionId} .nextBtn`);
   const prevBtn = document.querySelector(`#${sectionId} .prevBtn`);
 
+
   slides.forEach(function (slide, index) {
     slide.style.left = `${index * 100}%`;
 
