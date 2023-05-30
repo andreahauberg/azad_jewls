@@ -1,3 +1,8 @@
+body {
+  background-color: black;
+}
+
+
 header#home_head {
     background-image: none;
     position: absolute;
@@ -31,7 +36,7 @@ header#home_head {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    font-size: 4cqw;
+    font-size: 5cqw;
     font-family: MolendRegular-MVD6p;
     font-weight: 600;
   }

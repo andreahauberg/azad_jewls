@@ -3,7 +3,8 @@ h1 {
     position:sticky;
     font-size: 6cqw;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .grid-container {
