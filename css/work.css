@@ -1,22 +1,13 @@
 @namespace url("http://www.w3.org/1999/xhtml");
-h1 {
-  position: sticky;
-  text-align: center;
-}
 
 #intro {
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
-body 
-{
-  background-color: black;
-}
 main {
   line-height: 34px;
   color: var(--custom-color);
-  background-color: black;
 }
 
 
@@ -31,8 +22,6 @@ main {
 #local-menu {
   position: sticky;
   top: 0;
-  /* udseende på sticky menu */
-  background-color: black;
   backdrop-filter: blur(10px);
   z-index: 99;
 }
@@ -40,30 +29,48 @@ main {
 .local_link {
   text-decoration: none;
   /* farve på skrift i local menu */
-  color: rgb(149, 16, 16);
+  color: var(--custom-color);
   padding: 40px;
   font-family: MolendRegular-MVD6p;
 }
 
-.local_link:hover {
-  /*farve på hover i local menu*/
-  color: rgb(125, 8, 8);
-}
+
 #sec1,
  #sec2, #sec3, #sec4, #sec5 {
   padding: 4rem;
 }
-.copy,
+.copy1,
 .projekt, p {
+  color: #bcbcbc;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center !important;
+  text-align: center;
   margin: 0 auto;
   max-width: 75ch;
 }
-.copy p {
-  font-size: 15px !important;
+
+
+.projekt, .copy1, p {
+  margin-bottom: 3%;
+}
+
+.projekt2{
+  color: var(--custom-color);
+  color: var(--custom-color);
+    position:sticky;
+    font-size: 6cqw;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+} 
+.copy1 p {
+  margin-top: 20px;
+  line-height: 34px; 
+  font-size: 20px;
+  font-family: StanderdfreeRegular-X3KK2;
+  color: #CAC9C9;
+
 }
 
 .introp {
@@ -156,7 +163,7 @@ main {
   margin-top: 20px;
 }
 
-.copy {
+.copy1 {
   padding: 1rem;
 }
   .local_link {

@@ -101,7 +101,8 @@ a {
 .foot_link:hover,
 .under_li_nav:hover,
 .under_li:hover,
-.content_link:hover{
+.content_link:hover,
+.local_link:hover{
   color:darkblue;
   transition: 0.7s ease;
 }
