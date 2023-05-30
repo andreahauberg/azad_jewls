@@ -2,6 +2,9 @@ body {
   background-color: black;
 }
 
+.nav_menu {
+  background-image:none;
+}
 
 header#home_head {
     background-image: none;
@@ -12,7 +15,6 @@ header#home_head {
     z-index: 1;
   }
   
-
 .video-container {
     position: relative;
     height: 100vh;
