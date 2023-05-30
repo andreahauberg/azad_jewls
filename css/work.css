@@ -1,55 +1,8 @@
-<<<<<<< HEAD
 /* Fonts */
 
 /* General styles */
 body,
 main {
-=======
-@namespace url("http://www.w3.org/1999/xhtml");
-h1 {
-  position: sticky;
-  text-align: center;
-}
-
-#intro {
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-}
-
-body 
-{
-  background-color: black;
-}
-main {
-  line-height: 34px;
-  color: var(--custom-color);
-  background-color: black;
-}
-
-
-.local_menu {
-  position:sticky;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#local-menu {
-  position: sticky;
-  top: 0;
-  /* udseende på sticky menu */
-  background-color: black;
-  backdrop-filter: blur(10px);
-  z-index: 99;
-}
-
-.local_link {
-  text-decoration: none;
-  /* farve på skrift i local menu */
-  color: rgb(149, 16, 16);
-  padding: 40px;
->>>>>>> e66545686189b807c6875e603c85d964083c738b
   font-family: MolendRegular-MVD6p;
 }
 
@@ -61,9 +14,6 @@ main {
   text-align: center;
   margin: 0 auto;
   max-width: 75ch;
-}
-.copy p {
-  font-size: 15px !important;
 }
 
 .projekt {
@@ -209,7 +159,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
 main {
   min-height: 100vh;
 }
@@ -224,30 +173,6 @@ main {
   overflow: hidden;
   margin-top: 4rem;
 }
-=======
-@media screen and (max-width: 900px) {
-  main {
-    max-width: 960px;
-  }
-
-  .local_item {
-    text-align: center;
-  }
-.local_menu {
-  display: block;
-  padding: 0.2rem;
-  line-height: 0.8rem;
-  z-index: 0;
-  margin-top: 20px;
-}
-
-.copy {
-  padding: 1rem;
-}
-  .local_link {
-    font-size: 12px;
-  }
->>>>>>> e66545686189b807c6875e603c85d964083c738b
 
 .slide {
   position: absolute;
@@ -315,7 +240,6 @@ main {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .slider-container {
     height: 55vh;
@@ -325,12 +249,6 @@ main {
 @media screen and (min-width: 992px) {
   .slider-container {
     height: 65vh;
-=======
-@media screen and (max-width: 1000px) {
-  main {
-    max-width: 1000px;
-  
->>>>>>> e66545686189b807c6875e603c85d964083c738b
   }
 
   p {
